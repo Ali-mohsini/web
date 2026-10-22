@@ -1,0 +1,44 @@
+:root
+{
+  --color-paper:#fbf7f0;
+  --color-inkt:#2b2b2b;
+  --color-muted:#6b6b6b;
+  --color-accent:#b5451b;
+  --color-zebra:#f1e9dc;
+
+}
+body{
+  background-color: var(--color-paper);
+  color: var(--color-inkt);
+  line-height: 1.7;
+}
+h1{
+  color: var(--color-accent);
+  font-weight: 0.25rem;
+}
+li a{
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight:bold;
+
+}
+li a:hover{
+  color: var(--color-inkt);
+  text-decoration: underline;
+}
+main a{
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+article h3{
+  color: var(--color-muted);
+}
+ul li:nth-child(odd)  {
+  background-color: var(--color-zebra);
+}
+footer {
+
+  text-align: center;
+  
+}

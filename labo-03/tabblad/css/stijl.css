@@ -1,0 +1,37 @@
+/* stijl.css - labo 3, tabblad (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+    --achtergrondkleur:#ff816f;
+    --tabbladkleur:#ffd500;
+    --kartelkleur:#ffffff;
+    --randenkleur:#000000;
+}
+
+/* === your rules === */
+body{
+    background-color: var(--achtergrondkleur);
+    font-family: arial, sans-serif;
+}
+h1{
+    font-size: 1rem;
+    background-color: var(--tabbladkleur);
+    border: 5px solid var(--randenkleur);
+    width:150px;
+    padding: 10px;
+    margin: 30px 0 0 30px;
+    box-shadow: 0px 5px 2px  var(--randenkleur);
+
+    
+}
+h2{
+    background-color: var(--kartelkleur);
+    border: 5px solid var(--randenkleur);
+    margin-left:30px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 5px 2px  var(--randenkleur);
+
+
+}

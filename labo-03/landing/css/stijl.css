@@ -1,0 +1,87 @@
+/* stijl.css - labo 3, landing (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --kleur-banner: #c8b8ff;
+    --kleur-hero: #779cee;
+    --kleur-tekst-donker: #050505;
+    --kleur-knop-achtergrond: #000000;
+    --kleur-knop-tekst: #ffffff;
+}
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--kleur-tekst-donker);
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+li {
+    list-style-position: inside;
+    display: inline-block;
+    padding: 2vh;
+}
+
+li a {
+    text-decoration: none;
+}
+
+img {
+    width: 40vh;
+    height: auto;
+    margin-top: 10vh;
+}
+
+
+.banner {
+    background-color: var(--kleur-banner);
+    text-align: center;
+    padding: 0.25rem;
+}
+
+main {
+    background-color: var(--kleur-hero);
+    display: flex;
+    height: 80vh;
+}
+
+article {
+    width: 60%;
+    padding: 5vh;
+}
+article h1{
+    max-width: 400px;
+}
+
+article h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+article p {
+    font-size: 1.1rem;
+    max-width: 400px;
+    margin-bottom: 2.5rem;
+}
+
+.knop { 
+    display: inline-block;
+    background-color: var(--kleur-knop-achtergrond);
+    color: var(--kleur-knop-tekst);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.75rem 1.75rem;
+    border-radius: 8px; 
+}
+
+

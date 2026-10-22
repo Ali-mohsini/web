@@ -1,0 +1,36 @@
+/* stijl.css - labo 4, trap (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+main{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+main :nth-child(1){
+    background-color:red;
+    grid-column:1/2;
+    grid-row:1;
+    height:10rem;
+}
+main :nth-child(2){
+    background-color:yellow;
+    grid-column:2/3;
+    grid-row:2;
+    height:10rem;
+}
+main :nth-child(3){
+    background-color:yellow;
+    grid-column:3/4;
+    grid-row:3;
+    height:10rem;
+}
+main :nth-child(4){
+    background-color:yellow;
+    grid-column:4/5;
+    grid-row:4;
+    height:10rem;
+}
