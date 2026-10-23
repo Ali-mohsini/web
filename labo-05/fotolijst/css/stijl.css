@@ -6,3 +6,57 @@
 }
 
 /* === your rules === */
+body{
+    background-color: #111111;
+    display:flex;
+    justify-content:center;
+    margin:4rem 0 4rem 0;
+}
+.lijst{
+    position:relative;
+    width:36rem ;
+    height:36rem;
+}
+
+img{
+    height:100%
+}
+.vlakje{
+  height:5rem;
+  width:5rem;
+}
+.roze{
+    background-color:pink;
+    position:absolute;
+    top:5rem;
+    left:5rem;
+    z-index:2;
+}
+.groen{
+    background-color:green;
+    position:absolute;
+    top:2rem;
+    left:2rem;
+
+}
+.rood{
+    background-color:red;
+    position:absolute;
+    bottom:3rem;
+    right:3rem;
+    z-index:2;
+
+}
+.lime{
+    background-color:lime;
+    position:absolute;
+    bottom:6rem;
+    right:6rem
+
+}
+.lijst :nth-child(6){
+    position:relative;
+    color:rgb(231, 218, 218);
+    display: flex;
+    justify-content:center;
+}
