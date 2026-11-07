@@ -2,7 +2,248 @@
 
 /* === tokens === */
 :root {
+--papier-kleur:#f4efe6;
+--kart-kleur:white;
+--inkt-kleur:#2b2b2b;
+--gedempt-kleur:#6b6b6b;
+--balk-kleur:#2f241d;
+--footer-kleur:#2f241d;
+--tekst-kleur:#f4efe6;
+--accent-kleur:#c8742e;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "kop    kop"
+    "zijbalk inhoud"
+    "voet   voet";
+    grid-template-rows: auto 1fre auto;
+    background-color: var(--papier-kleur);
+
+}
+header{
+    grid-area: kop ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem 0 1rem;
+    background-color: var(--balk-kleur);
+}
+header a{
+    text-decoration: none;
+    color:white;
+
+}
+header li{
+    list-style: none;
+    margin-left:0.5rem
+}
+header ul{
+    display: flex;
+}
+.logo{
+    color:var(--accent-kleur);
+    font-size: 1.5rem;
+
+}
+.actief{
+    color:var(--accent-kleur)
+}
+aside{
+    grid-area: zijbalk;
+    padding: 2rem;
+    border-right: 0.01rem solid blue;
+}
+main{
+    grid-area: inhoud;
+    padding:2rem;
+    
+}
+footer{
+    grid-area: voet;
+}
+.kaarten{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    padding:0;
+
+}
+.kaart{
+    position: relative;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--accent-kleur);
+    border-radius: 0.5rem;
+    height: 35rem;
+    overflow: hidden;
+    padding: 0;
+
+}
+img{
+    grid-row: 1/2;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.badge{
+    position: absolute;
+    color:white;
+    background-color: var(--accent-kleur);
+    padding:0.1rem 0.5rem 0.1rem 0.5rem;
+    border-radius: 1.5rem;
+    top:1rem;
+    right: 2rem;
+
+}
+.tekst{
+    padding: 1rem;
+
+}
+h2{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.prijs{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+footer{
+    background-color: var(--footer-kleur);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+    color:var(--tekst-kleur);
+}
+
+
+
+
+
+
+
+
+
+/* 
+body{
+    background-color:var(--papier-kleur);
+    display:grid;
+    grid-template-columns:16rem 1fr;
+    grid-template-rows:auto 1fr auto ;
+    grid-template-areas:
+    "kop     kop"
+    "zijbalk inhoud "
+    "voet    voet";
+}
+
+header{
+    background-color: var(--balk-kleur);
+    grid-area:kop;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+aside{
+    grid-area:zijbalk;
+    padding-left:1rem;
+    border-right:0.01rem solid var(--balk-kleur);
+}
+.logo{
+    color:var(--accent-kleur);
+    font-size: 1.5rem;
+}
+.actief{
+    color:var(--accent-kleur);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-size:1rem;
+    padding:1rem 0 1rem 0;
+}
+header a{
+    text-decoration: none;
+    margin-left:1rem;
+    padding-right:1rem;
+    color:var(--tekst-kleur);
+}
+header ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+main{
+    grid-area:inhoud;
+    padding:2rem;
+   
+}
+.kaarten{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:1rem;
+    padding:0;
+  
+}
+.kaart{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--kart-kleur);
+    border-radius:0.5rem;
+    height: 40rem;
+    overflow: hidden;
+}
+.kaart:nth-child(2){
+    border-top:0.5rem solid var(--accent-kleur);
+} 
+.kaart:nth-child(5){
+    border-top:0.5rem solid var(--accent-kleur);
+} 
+img{
+    grid-row:1/2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 
 }
 
-/* === your rules === */
+.badge{
+    position: absolute;
+    color:white;
+    top:1rem;
+    right:1rem;
+    background-color:var(--accent-kleur) ;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 1rem;
+}
+div{
+    padding:1rem;
+}
+.prijs{
+    position: absolute;
+    bottom: 1rem;
+    left:1rem;
+    color:var(--accent-kleur);
+}
+footer{
+    grid-area:voet;
+    background-color: var(--balk-kleur);
+    color:white;    
+    display: flex;
+    justify-content: center;
+}
+
+
+ */
